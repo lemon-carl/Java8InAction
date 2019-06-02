@@ -174,9 +174,17 @@ public class DateTest {
                 .toFormatter(Locale.ITALIAN);
 
         String formattedDate3 = date5.format(italianFormatter);
-        LocalDate date7 = LocalDate.parse(formattedDate2,italianFormatter);
+        LocalDate date7 = LocalDate.parse(formattedDate2,italianFormatter2);
         System.out.println(formattedDate3);// 18. marzo 2014
         System.out.println(date7);// 2014-03-18
+
+        String str = "hello word";
+        char mychar = str.charAt(5);
+        System.out.println("aaa/:"+mychar);
+
+        String str2 = "  Java  class   ";
+        System.out.println(str2.length());
+        System.out.println(str2.trim().length());
 
     }
 
