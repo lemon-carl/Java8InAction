@@ -1,10 +1,17 @@
 package com.lemon.java8.entity;
-/** 
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
  *
  * @author: Lemon
  * @Date : 2021/8/23 21:05
  * 
  */
+@Data
+@NoArgsConstructor
 public class Apple {
 
     private String color;
