@@ -106,7 +106,11 @@ public class FilterApple {
 
         new Thread(() -> System.out.println(Thread.currentThread().getName())).start();
 
-        
-        Thread.currentThread().join();
+
+        try {
+            Thread.currentThread().join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
